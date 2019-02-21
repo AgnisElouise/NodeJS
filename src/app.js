@@ -13,6 +13,7 @@ mongoose.connect('mongodb://agnis:agnis10@balta-shard-00-00-kwtej.azure.mongodb.
 //Carrega os Models
 const Product = require('./models/product');
 const Customer = require('./models/customer');
+const Order = require('./models/order');
 
 //Carrega as Rotas
 const indexRoute = require('./routes/index-route');
