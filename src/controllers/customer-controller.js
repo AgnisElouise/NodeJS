@@ -1,7 +1,7 @@
 'use strict';
 
 const ValidationContract = require('../validator/fluent-validator');
-const repository = require('../repositories/customer-reposiyory');
+const repository = require('../repositories/customer-repository');
 
 exports.post = async(req, res, next) => {
     let contract = new ValidationContract();
