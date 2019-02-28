@@ -25,7 +25,7 @@ exports.post = async(req, res, next) => {
             password: md5(req.body.password + global.SALT_KEY)
         });
 
-        await emailService.send(
+        emailService.send(
             req.body.email,
             'Bem vindo ao Node Store',
             global.EMAIL_TMPL.replace('{0}', req.body.name));
